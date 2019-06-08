@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'header section';
+    grid-template-rows: 100vh;
+    grid-template-columns: 50vw 48vw;
+    grid-gap: 10px;
+    background-color: black;
+}
+header{
+    background-color: black;
+    display: grid;
+    grid-template-areas: 'section-header aside-header' 'footer-header footer-header' 'div-header div-header';
+    grid-template-columns: 38vw;
+    grid-template-rows: 50vh 40vh 10vh; 
+    grid-gap: 10px;
+}
+header section{
+    grid-area: section-header;
+    background-color: black;
+}
+header aside{
+    grid-area: aside-header;
+    background-color: white;
+}
+header footer{
+    grid-area: footer-header;
+    background-color: gray;
+}
+header div{
+    grid-area: div-header;
+    background-color:red;
+}
+section{
+    background-color:purple;
+    display: grid;
+    grid-template-areas: 'footer-section aside-section' 'header-section aside-section' 'div-section div-section';
+    grid-template-columns: 28vw;
+    grid-template-rows: 40vh 30vh 30vh;
+    grid-gap: 10px;
+}
+section header{
+    grid-area: header-section;
+    background-color:wheat;
+}
+section aside{
+    grid-area: aside-section;
+    background-color:orange;
+}
+section footer{
+    grid-area: footer-section;
+    background-color: black;
+}
+section div{
+    grid-area: div-section;
+    background-color: blueviolet;
+}
